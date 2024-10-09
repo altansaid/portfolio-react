@@ -1,15 +1,15 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 
 const footerLinks = [
-	{ title: 'Github', href: '#' },
-	{ title: 'LinkedIn', href: '#' },
-	{ title: 'Instagram', href: '#' },
-	{ title: 'Twitter', href: '#' },
+	{ title: 'Github', href: 'https://github.com/altansaid/' },
+	{ title: 'LinkedIn', href: 'https://www.linkedin.com/in/altansaid/' },
+	{ title: 'Instagram', href: 'https://www.instagram.com/saidaltan/' },
+	{ title: 'Twitter', href: 'https://www.twitter.com/saltan_pk' },
 ]
 
 export const Footer = () => {
 	return (
-		<footer className="relative -z-10 overflow-x-clip">
+		<footer className="relative z-10 overflow-x-clip">
 			<div
 				className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-300/30 -z-10 "
 				style={{
@@ -23,7 +23,8 @@ export const Footer = () => {
 					<nav className="flex flex-col md:flex-row items-center gap-8">
 						{footerLinks.map((link) => (
 							<a
-								href="#"
+								href={link.href}
+								target="_blank"
 								key={link.title}
 								className="inline-flex items-center gap-1.5"
 							>

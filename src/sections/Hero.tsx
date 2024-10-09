@@ -13,7 +13,7 @@ export const HeroSection = () => {
 			className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
 		>
 			<div
-				className="absolute inset-0"
+				className="absolute inset-0 -z-10"
 				style={{
 					maskImage:
 						'linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), transparent)',
@@ -110,7 +110,7 @@ export const HeroSection = () => {
 					<StarIcon className="size-28 text-emerald-300" />
 				</HeroOrbit>
 			</div>
-			<div className="container">
+			<div className="container z-10">
 				<div className="flex flex-col items-center">
 					<Image
 						src={memojiImage}
@@ -121,29 +121,40 @@ export const HeroSection = () => {
 						<div className="bg-green-500 size-2.5 rounded-full relative">
 							<div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
 						</div>
-						<div className="text-sm font-medium">
-							Available for new projects
-						</div>
+						<div className="text-sm font-medium">Available</div>
 					</div>
 					<div className="max-w-lg mx-auto">
 						<h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
 							Building Exceptional User Experience
 						</h1>
 						<p className="mt-4 text-center text-white/60 md:text-lg">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
-							ab aperiam doloribus delectus unde magnam nesciunt iusto id
-							mollitia suscipit placeat excepturi tenetur distinctio quo. Atque
-							accusamus ea maxime odit.
+							Hey there! I&apos;m Said Altan, an aspiring Web Developer based in
+							Canada, passionate about building engaging and responsive
+							websites. I&apos;m eager to bring fresh perspectives and
+							creativity to my projects. My journey as a developer involves a
+							continuous learning process, where each challenge is an
+							opportunity to grow. Check out my portfolio as I embark on this
+							exciting journey of creating intuitive and user-friendly web
+							experiences!
 						</p>
 					</div>
 					<div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
 						<button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-							<span className="font-semibold">Explore My Work</span>
+							<span className="font-semibold">
+								<a href="#">Download Resume</a>
+							</span>
 							<ArrowDown className="size-4" />
 						</button>
 						<button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
 							<span>👋</span>
-							<span className="font-semibold">Let&apos;s Connect</span>
+							<span className="font-semibold">
+								<a
+									href="https://www.linkedin.com/in/altansaid/"
+									target="_blank"
+								>
+									Let&apos;s Connect
+								</a>
+							</span>
 						</button>
 					</div>
 				</div>
