@@ -121,30 +121,35 @@ export const HeroSection = () => {
 						<div className="bg-green-500 size-2.5 rounded-full relative">
 							<div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
 						</div>
-						<div className="text-sm font-medium">Available</div>
+						<div className="text-sm font-medium">Available to new projects</div>
 					</div>
 					<div className="max-w-lg mx-auto">
 						<h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-							Building Exceptional User Experience
+							Hey there!
 						</h1>
+						<h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+							I&apos;m Said Altan
+						</h1>
+
 						<p className="mt-4 text-center text-white/60 md:text-lg">
-							Hey there! I&apos;m Said Altan, an aspiring Web Developer based in
-							Canada, passionate about building engaging and responsive
-							websites. I&apos;m eager to bring fresh perspectives and
-							creativity to my projects. My journey as a developer involves a
-							continuous learning process, where each challenge is an
-							opportunity to grow. Check out my portfolio as I embark on this
-							exciting journey of creating intuitive and user-friendly web
-							experiences!
+							Curious about who&apos;s behind the code? A web developer who
+							turns ideas into engaging, functional web experiences. Whether
+							it's designing seamless interactions or solving complex
+							challenges, I'm always up for pushing the boundaries of what's
+							possible online. Let&apos;s create something extraordinary
+							together!
 						</p>
 					</div>
 					<div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-						<button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-							<span className="font-semibold">
-								<a href="#">Download Resume</a>
-							</span>
-							<ArrowDown className="size-4" />
-						</button>
+						<a
+							href={process.env.PUBLIC_URL + '/src/assets/pdf/resume.pdf'}
+							download
+						>
+							<button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+								<span className="font-semibold">Download Resume</span>
+								<ArrowDown className="size-4" />
+							</button>
+						</a>
 						<button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
 							<span>👋</span>
 							<span className="font-semibold">
