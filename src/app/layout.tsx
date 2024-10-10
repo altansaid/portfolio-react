@@ -11,8 +11,24 @@ const calistoga = Calistoga({
 })
 
 export const metadata: Metadata = {
-	title: 'Said Altan',
-	description: 'React Based Personal Portfolio Website',
+	title: 'Said Altan | Web Developer Portfolio',
+	description:
+		'Discover my web development projects, insights, and tech explorations on my personal website.',
+	openGraph: {
+		type: 'website',
+		url: 'https://saidaltan.com',
+		title: 'Said Altan | Web Developer Portfolio',
+		description:
+			'Discover my web development projects, insights, and tech explorations on my personal website.',
+		images: [
+			{
+				url: '/saidportfolio.png',
+				width: 1200,
+				height: 630,
+				alt: 'Said Altan Portfolio Preview',
+			},
+		],
+	},
 }
 
 export default function RootLayout({
