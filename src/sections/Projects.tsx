@@ -1,49 +1,127 @@
-import darkSaasLandingPage from '@/assets/images/dark-saas-landing-page.png'
-import lightSaasLandingPage from '@/assets/images/light-saas-landing-page.png'
-import aiStartupLandingPage from '@/assets/images/ai-startup-landing-page.png'
 import Image from 'next/image'
 import CheckCircleIcon from '@/assets/icons/check-circle.svg'
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
-import grainImage from '@/assets/images/grain.jpg'
+
 import { Card } from '@/components/Card'
 import customerFeedback from '@/assets/images/customerfeedback.png'
+import geekGoose from '@/assets/images/geekgoose.png'
+import liveUser from '@/assets/images/liveuserapp.png'
+import pokedex from '@/assets/images/pokedex.png'
+import passwordGenerator from '@/assets/images/passwordgenerator.png'
+import portfolio from '@/assets/images/portfolio.png'
+import GithubIcon from '@/assets/icons/github.svg'
+import portfolio2 from '@/assets/images/portfolio2.png'
 
 const portfolioProjects = [
 	{
-		company: 'Personal Works',
+		company: 'Personal',
+		year: '2024',
+		title: 'GeekGoose Blog',
+		results: [
+			{ title: 'PHP Laravel, Livewire, Jetstream Filament' },
+			{
+				title: 'User-friendly interface, smooth',
+			},
+			{
+				title: 'Fully responsive, accessible',
+			},
+		],
+		link: 'https://github.com/altansaid/geekgoose',
+		source: 'https://github.com/altansaid/geekgoose',
+		image: geekGoose,
+	},
+	{
+		company: 'Personal',
+		year: '2024',
+		title: 'Personal Porfolio',
+		results: [
+			{ title: 'React, Next.js, Tailwind CSS, Framer Motion' },
+			{
+				title: 'User-friendly interface, smooth',
+			},
+			{
+				title: 'Fully responsive, accessible',
+			},
+		],
+		link: 'https://saidaltan.com/',
+		source: 'https://github.com/altansaid/portfolio-react',
+		image: portfolio,
+	},
+	{
+		company: 'Personal',
+		year: '2023',
+		title: 'Porfolio Project',
+		results: [
+			{ title: 'HTML, CSS, JavaScript' },
+			{
+				title: 'Basic, Single Page',
+			},
+			{
+				title: 'Fully responsive, accessible',
+			},
+		],
+		link: 'https://altansaid.github.io/portfolio/',
+		source: 'https://github.com/altansaid/portfolio',
+		image: portfolio2,
+	},
+	{
+		company: 'Personal',
 		year: '2023',
 		title: 'Customer Feedback',
 		results: [
-			{ title: 'Enhanced user experience by 40%' },
-			{ title: 'Improved site speed by 50%' },
-			{ title: 'Increased mobile traffic by 35%' },
+			{ title: 'HTML, CSS, JavaScript' },
+			{ title: 'Gets user feedback by their satisfaction rate with emojis.' },
 		],
-		link: '',
+		link: 'https://altansaid.github.io/feedbackApp/',
+		source: 'https://github.com/altansaid/feedbackApp',
 		image: customerFeedback,
 	},
+
 	{
-		company: 'Innovative Co',
-		year: '2021',
-		title: 'Light Saas Landing Page',
+		company: 'Personal',
+		year: '2023',
+		title: 'Live User Search',
 		results: [
-			{ title: 'Boosted sales by 20%' },
-			{ title: 'Expanded customer reach by 35%' },
-			{ title: 'Increased brand awareness by 15%' },
+			{ title: 'HTML, CSS, JavaScript, API' },
+			{ title: 'Checks live users by name or location' },
 		],
-		link: 'https://youtu.be/7hi5zwO75yc',
-		image: lightSaasLandingPage,
+		link: 'https://altansaid.github.io/liveUsersApp/',
+		source: 'https://github.com/altansaid/liveUsersApp',
+		image: liveUser,
 	},
 	{
-		company: 'Quantum Dynamics',
+		company: 'Personal',
 		year: '2023',
-		title: 'AI Startup Landing Page',
+		title: 'Pokedex',
 		results: [
-			{ title: 'Enhanced user experience by 40%' },
-			{ title: 'Improved site speed by 50%' },
-			{ title: 'Increased mobile traffic by 35%' },
+			{ title: 'HTML, CSS, JavaScript, API' },
+			{
+				title: 'Pokemon cards using by pokedex api',
+			},
+			{
+				title: 'Fully responsive',
+			},
 		],
-		link: 'https://youtu.be/Z7I5uSRHMHg',
-		image: aiStartupLandingPage,
+		link: 'https://altansaid.github.io/pokedexApp/',
+		source: 'https://github.com/altansaid/pokedexApp',
+		image: pokedex,
+	},
+	{
+		company: 'Personal',
+		year: '2023',
+		title: 'Password Generator',
+		results: [
+			{ title: 'HTML, CSS, JavaScript' },
+			{
+				title: 'Classic password generator',
+			},
+			{
+				title: 'User friendly UI',
+			},
+		],
+		link: 'https://altansaid.github.io/passwordGenerator/',
+		source: 'https://github.com/altansaid/passwordGenerator',
+		image: passwordGenerator,
 	},
 ]
 
@@ -95,19 +173,25 @@ export const ProjectsSection = () => {
 												</li>
 											))}
 										</ul>
-
-										<a href={project.link}>
-											<button className='bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6'>
-												<span>Visit Live Site</span>
-												<ArrowUpRightIcon className='size-4' />
-											</button>
-										</a>
+										<div className='flex'>
+											<a href={project.link} target='_blank'>
+												<button className='bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6'>
+													<span>Visit Live Site</span>
+													<ArrowUpRightIcon className='size-4' />
+												</button>
+											</a>
+											<a href={project.source} target='_blank'>
+												<button className='bg-white text-gray-950 h-12  ml-2 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6'>
+													<GithubIcon className='size-5' />
+												</button>
+											</a>
+										</div>
 									</div>
 									<div className='relative'>
 										<Image
 											src={project.image}
 											alt={project.title}
-											className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none'
+											className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none '
 										/>
 									</div>
 								</div>

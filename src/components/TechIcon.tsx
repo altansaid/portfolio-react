@@ -5,7 +5,7 @@ export const TechIcon = ({ component }: { component: React.ElementType }) => {
 	return (
 		<>
 			{' '}
-			<Component className='size-10 fill-[url(#tech-icon-gradient)]' />
+			<Component className='size-8 fill-[url(#tech-icon-gradient)]' />
 			<svg className='size-0 absolute'>
 				<linearGradient id='tech-icon-gradient'>
 					<stop offset='0%' stopColor='rgb(110 231 183)' />
