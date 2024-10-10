@@ -33,10 +33,10 @@ export const ToolboxItems = ({
 						{items.map((item) => (
 							<div
 								key={item.title}
-								className="inline-flex items-center gap-4 py-1 px-3 outline outline-2 outline-white/10 rounded-lg"
+								className='inline-flex items-center gap-4 py-1 px-3 outline outline-2 outline-white/10 rounded-lg'
 							>
 								<TechIcon component={item.iconType} />
-								<span className="font-semibold">{item.title}</span>
+								<span className='font-semibold'>{item.title}</span>
 							</div>
 						))}
 					</Fragment>
