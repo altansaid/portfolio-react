@@ -40,7 +40,10 @@ export default function RootLayout({
 					property='og:description'
 					content='Discover my web development projects, insights, and tech explorations on my personal website.'
 				/>
-				<meta property='og:image' content='/saidportfolio.png' />
+				<meta
+					property='og:image'
+					content='https://saidaltan.com/saidportfolio.png'
+				/>
 				<meta property='og:image:width' content='1200' />
 				<meta property='og:image:height' content='630' />
 				<meta property='og:image:alt' content='Said Altan Portfolio Preview' />
