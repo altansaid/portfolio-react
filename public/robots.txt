@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://saidaltan.com
+
+# Sitemaps
+Sitemap: https://saidaltan.com/sitemap.xml
