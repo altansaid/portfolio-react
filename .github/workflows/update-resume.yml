@@ -1,0 +1,27 @@
+name: Sync Resume PDF from resume-updates
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # Her gün saat 03:00'te çalışır (UTC = Türkiye saatiyle 06:00)
+
+  workflow_dispatch: # Elle tetikleme de mümkün kalsın
+
+jobs:
+  update-resume:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout portfolio repo
+        uses: actions/checkout@v3
+
+      - name: Download resume.pdf from resume-updates
+        run: |
+          curl -L https://raw.githubusercontent.com/altansaid/resume-updates/main/resume.pdf -o public/resume.pdf
+
+      - name: Commit and push updated resume
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add public/resume.pdf
+          git commit -m "Auto-update resume from resume-updates"
+          git push
