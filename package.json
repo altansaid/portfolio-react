@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
+		"@netlify/functions": "^4.1.9",
 		"@svgr/webpack": "^8.1.0",
 		"emailjs-com": "^3.2.0",
 		"framer-motion": "^11.3.21",
@@ -22,6 +23,7 @@
 		"react-helmet": "^6.1.0",
 		"react-scroll": "^1.9.0",
 		"react-snap": "^1.23.0",
+		"resend": "^4.6.0",
 		"tailwind-merge": "^2.4.0"
 	},
 	"devDependencies": {
