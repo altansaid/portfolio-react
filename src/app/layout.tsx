@@ -26,7 +26,6 @@ export const metadata: Metadata = {
         url: "https://saidaltan.com/saidportfolio.png",
         width: 1200,
         height: 630,
-        alt: "Said Altan Portfolio Preview",
       },
     ],
   },
@@ -56,9 +55,9 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-FZZW4C28N9' {
+            gtag('config', 'G-FZZW4C28N9', {
               debug_mode: true
-            }), 
+            });
           `}
         </Script>
         {children}
